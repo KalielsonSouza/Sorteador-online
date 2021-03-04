@@ -1,0 +1,21 @@
+body 
+{
+    background-color: rgb(38, 44, 46);
+}
+
+#containerTextBox
+{
+    position: relative;
+    top: 1rem;
+}
+
+#btnSortear
+{
+   position: relative;
+    top: 2em;
+}
+
+#alertTextEmpty
+{
+    display: none;
+}
