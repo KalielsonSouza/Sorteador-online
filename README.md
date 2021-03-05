@@ -5,5 +5,5 @@ Essa versão é bem básica, servindo para treinar algumas coisas do boostrap! P
 Atualizações do projeto:
 <ol>
 <li>Deixou de um ser um sorteador apenas de palavras, agora é um sorteador com opção de palavras e números!</li>
-<li>Pequena "animação" feita na hora de sortear palavras, bem básica quando se clicka na opção sortear um slide com os elementos do sorteio acontece antes do resultado.</li>
+<li>Pequena "animação" básica feita na hora de sortear palavras, quando se clicka na opção sortear um slide com os elementos do sorteio acontece antes do resultado.</li>
 </ol>
