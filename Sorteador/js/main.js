@@ -44,9 +44,20 @@ function sortNumbers()
 {
     var minNumber = document.getElementById("minInputNumber").value;
     var maxNumber = document.getElementById("maxInputNumber").value;
-    var result = getRandomInt(minNumber, maxNumber);
     var TextResult = document.getElementById("resultTextNum");
-    TextResult.innerHTML = '<p class="lead" id="resultTextNum"><mark>RESULTADO: '+result+'</mark></p>';
+    var emptyNumbersNotify = document.getElementById("alertTextEmptyNumber");
+    if(minNumber != "" && maxNumber !="")
+    {
+        emptyNumbersNotify.style.display = "none";
+        var result = getRandomInt(minNumber, maxNumber);
+        TextResult.innerHTML = '<p class="lead" id="resultTextNum"><mark>RESULTADO: '+result+'</mark></p>';
+    }
+    else
+    {
+        emptyNumbersNotify.style.display = "block";
+    }
+   
+    
 }
 
 function divAlternate(caseNum)

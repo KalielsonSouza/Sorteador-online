@@ -15,7 +15,7 @@ body
     top: 2em;
 }
 
-#alertTextEmpty
+#alertTextEmpty, #alertTextEmptyNumber
 {
     display: none;
 }
