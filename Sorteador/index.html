@@ -10,28 +10,54 @@
     <script type="text/javascript" src="js/main.js"></script>
     <title>SORTEADOR DE PALAVRAS</title>
 </head>
+
 <body class="d-flex h-50 text-center text-white bg-dark">
     
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-   
-    <h1>SORTEADOR-DE-PALAVRAS-ONLINE</h1>
+   <header class="mb-auto">
+     <div class="div">
+      <h1>SORTEADOR-ONLINE</h1>
+      <a class="nav-link" href="#" id="alternateDivBtn" onclick="divAlternate(1)">SORTEADOR DE NUMEROS</a>
+     </div>
+   </header>
     <ul class="list-unstyled">
       <li>Pequeno projeto para estudo de bootstrap e javascript!</li>
       <li>Utilizando: Bootsrap 5</li>
       <li>Utilizando: Javascript - ECMAScript 2018</li>
     </ul>
-    <div class="mb-3">
+    <div class="mb-3" id="wordsSortDiv">
       <div class="container" id="containerTextBox">
-      <label for="textToSort" class="form-label">INSIRA ABAIXO OS ELEMENTOS QUE DESEJA SORTEAR SEPARADOS POR LINHA</label>
+      <label for="textToSort" class="form-label w=">INSIRA ABAIXO OS ELEMENTOS QUE DESEJA SORTEAR SEPARADOS POR LINHA</label>
       <p class="lead" id="resultText">
         <mark>ESPERANDO SORTEIO...</mark>   
       </p>
+      
       <div id="alertTextEmpty"class="alert alert-warning alert-dismissible fade show" role="alert">
         <strong>Hey!</strong> Você esqueceu de por algo para gente sortear!
       </div>
       <textarea class="form-control" id="textToSort" rows="12"></textarea>
-      <button type="button" class="btn btn-success" id="btnSortear" data-toggle="tooltip" data-placement="bottom" title="Lembre-se de verificar se tá tudo certo!" onclick="sortear()">SORTEAR</button>
+      <button type="button" class="btn btn-success" id="btnSortear" data-toggle="tooltip" data-placement="bottom" title="Lembre-se de verificar se tá tudo certo!" onclick="sortWords()">SORTEAR</button>
+      
+    </div>
+    </div>
+    <div class="mb-3  align-self-center" id="numberSortDiv">
+      <div class="container" id="containerTextBox">
+      <label for="textToSort" class="form-label w=">ESCOLHA O NÚMERO MÍNIMO E O MÁXIMO</label>
+      <p class="lead" id="resultTextNum">
+        <mark>ESPERANDO SORTEIO...</mark>   
+      </p>
+      <div id="alertTextEmptyNumber"class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Hey!</strong> Você esqueceu de por algo para gente sortear!
       </div>
+          <label for="minInputNumber" class="form-label">MIN</label>
+          <input type="number" class="form-control" id="minInputNumber">
+          <label for="maxInputNumber" class="form-label">MAX</label>
+          <input type="number" class="form-control" id="maxInputNumber">
+      </div>
+     
+      <button type="button" class="btn btn-success" id="btnSortear" data-toggle="tooltip" data-placement="bottom" title="Lembre-se de verificar se tá tudo certo!" onclick="sortNumbers()">SORTEAR</button>
+      
+    </div>
     </div>
   </div>
   </body>
