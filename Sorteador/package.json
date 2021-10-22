@@ -1,0 +1,38 @@
+{
+  "name": "pokemonhtml",
+  "version": "1.0.0",
+  "description": "Pokemon dex in html5 and nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "datejs": "^1.0.0-rc3",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.5",
+    "express": "~4.16.1",
+    "fetch": "^1.1.0",
+    "firebase-admin": "^9.2.0",
+    "http-errors": "~1.6.3",
+    "https": "^1.0.0",
+    "mercadopago": "^1.3.2",
+    "moment": "^2.29.1",
+    "morgan": "~1.9.1",
+    "node-fetch": "^2.6.1",
+    "qrcode": "^1.4.4",
+    "request": "^2.88.2",
+    "socket.io": "^2.3.0",
+    "tablesorter": "^2.31.3",
+    "twilio": "^3.55.0",
+    "uniq": "^1.0.1",
+    "wbm": "^1.1.13"
+  }
+}
